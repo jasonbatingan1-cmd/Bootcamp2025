@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="projectname">Justin Bieber Bio</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url("/Users/jasonbatingan/Documents/VisualStudio/renders/bieber_background.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: serif;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            margin-left: 20px;
+            font-family: serif;
+        }
+
+        h2, h3 {
+            color: white;
+            font-family: serif;
+        }
+
+        nav {
+            color: white;
+            font-family: serif;
+            font-size: 15px;
+        }
+
+        p, summary {
+            color: white;
+            font-family: serif;
+            font-size: 15px;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid rgb(255, 255, 255);
+            border-collapse: separate;
+            font-size: 12px;
+            text-align: center;
+            width: 150px;
+            table-layout: fixed;
+
+        }
+
+        th {
+            height: 50px;
+            background-color: lightgrey;
+        }
+
+        td {
+            background-color: rgba(255, 255, 255, 0.399);
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #pSection1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        #subtitle {
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+
+        #styleTable {
+            width: 450px;
+        }
+
+        footer{
+            background-color: black;
+        }
+        
+    </style>
+<!--    
+            ORDER OF STRENGTH FOR SPECIFICITY
+
+
+Element Selector (p, h1, h2, etc..) - Weakest Specificity
+
+Class Selector (.first-section)
+
+ID Selector (#btn_submit)
+
+Inline Styles (<p style="...") - Highest
+-->
+
+    <!--
+    External CSS, referencing styles1.css file
+    <link rel="stylesheet" href="styles1.css">
+    -->
+</head>
+
+<body>
+    <!--Title and Subtitle-->
+    <h1 id="title" align="center">Justin Bieber</h1>
+    <p id="subtitle">
+        Justin Bieber is a Canadian singer and songwriter who rose to fame as a teenager with his debut single "One Time" in
+        2009. Known for hits like "Baby," "Love Yourself," and "Peaches," he has become one of the best-selling music artists in the
+        world, recognized for his pop and R&B sound, as well as his influence on modern music culture.
+        <br>
+        <br>
+    </p>
+
+    <!--Navigation Bar-->
+    <nav id="navSection1" align="center">
+        <a href="#discography">Discography</a> |
+        <a href="#styles">Style and Techniques</a> |
+        <a href="#video">Videos</a> <br>
+    </nav>
+    
+    <!--Album Releases Section-->
+    <h2 id="title2Section1" class="AlbumReleases" align="center">Recent Album Releases</h2>
+    <table id="discography" align="center" style="width:50%">
+        <tr>
+            <th>Album Name</th>
+            <th>Release Date</th>
+            <th>Cover Art</th>
+        </tr>
+        <tr>
+            <td><strong>Swag II</strong></td>
+            <td>September 5th, 2025</td>
+            <td><img src="/Users/jasonbatingan/Documents/VisualStudio/renders/swag_ii.jpeg"></td>
+        </tr>
+        <tr>
+            <td><strong>Swag</strong></td>
+            <td>July 11th, 2025</td>
+            <td><img src="/Users/jasonbatingan/Documents/VisualStudio/renders/swag.jpeg"></td>
+        </tr>
+        <tr>
+            <td><strong>Justice</strong></td>
+            <td>March 19th, 2021</td>
+            <td><img src="/Users/jasonbatingan/Documents/VisualStudio/renders/justice.jpeg"></td>
+        </tr>    
+        
+    </table>
+        <!--Details for first table-->
+            <summary align="center"><br>Full Discography:
+                <details>
+                    <p>My World (2009)</p>
+                    <p>My World 2.0 (2010)</p>
+                    <p>Under the Mistletoe (2011)</p>
+                    <p>Believe (2012)</p>
+                    <p>Purpose (2015)</p>
+                    <p>Changes (2020)</p>
+                    <p>Justice (2021)</p>
+                    <p>Swag (2025)</p>
+                    <p>Swag II (2025)</p>
+                </details>
+                </summary>
+
+    <!--Style Section-->
+    <h2 id="styles" align="center">Style and Techniques</h2>
+        <table class="styleTable" align="center" border="1">
+            <tr>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>🎤 Singing Style</strong></td>
+                <td>Blends pop and R&B, featuring smooth falsetto, breathy tone, and melodic runs with strong emotional delivery.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>🎶 Vocal Techniques</strong></td>
+                <td>Uses falsetto, vocal layering, harmonies, rhythmic phrasing, and subtle improvisation in live performances.</td>
+            </tr>
+            <tr>
+                <td><strong>🎹 Instrumental Skills</strong></td>
+                <td>Plays guitar, drums, and piano, often accompanying himself in acoustic or live sets.</td>
+            </tr>
+            <tr>
+                <td><strong>⭐️ Overall</strong></td>
+                <td>Known for versatility across genres, with a focus on tone, falsetto mastery, and expressive delivery over raw
+                    power.</td>
+            </tr>
+        </table>
+
+        <!--video section-->
+
+    <!--TikTok embed-->
+    <h2 id="video" align="center">Videos</h2>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jbfan136/video/7538186984297123128"
+        data-video-id="7538186984297123128" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@jbfan136" href="https://www.tiktok.com/@jbfan136?refer=embed">@jbfan136</a> ALL
+            THAT MATTERS FULL LIVE NYE 2021 <a title="justinbieberedits💜" target="_blank"
+                href="https://www.tiktok.com/tag/justinbieberedits%F0%9F%92%9C?refer=embed">#justinbieberedits💜</a> <a
+                title="justinbieber" target="_blank"
+                href="https://www.tiktok.com/tag/justinbieber?refer=embed">#justinbieber</a> <a title="bieber"
+                target="_blank" href="https://www.tiktok.com/tag/bieber?refer=embed">#bieber</a> <a title="jb"
+                target="_blank" href="https://www.tiktok.com/tag/jb?refer=embed">#JB</a> <a title="biebernye"
+                target="_blank" href="https://www.tiktok.com/tag/biebernye?refer=embed">#BieberNYE</a> <a title="changes"
+                target="_blank" href="https://www.tiktok.com/tag/changes?refer=embed">#CHANGES</a> <a
+                title="changesjustinbieber" target="_blank"
+                href="https://www.tiktok.com/tag/changesjustinbieber?refer=embed">#changesjustinbieber</a> <a
+                title="allthatmatters" target="_blank"
+                href="https://www.tiktok.com/tag/allthatmatters?refer=embed">#allthatmatters</a> <a target="_blank"
+                title="♬ All That Matters - Justin Bieber"
+                href="https://www.tiktok.com/music/All-That-Matters-6923369632371853314?refer=embed">♬ All That Matters -
+                Justin Bieber</a> </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <p align="center">Live performance of "All That Matters" by Justin Bieber at his New Year's Eve 2021 concert in New York City.
+                    Showcasing the vocal techniques and style described above.
+            <br></p>
+
+        <!--YouTube embed-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tQ0yjYUFKAE" style="display: block; margin: 0 auto;"
+        type="text/html" frameborder="0" referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+    <aside>
+        <p align="center">One of my favorite music videos of his, "Peaches" featuring Daniel Caesar and Giveon, from his album Justice.
+            <br></p>
+        <p align="center">[Click <a href="https://www.youtube.com/watch?v=7h9a_0opSIQ"  target="_blank">here </a>if the the video player is unavailable]<a href="https://www.youtube.com/watch?v=7h9a_0opSIQ"></a> </p>
+        <p align="center">For more videos, check out his <a href="https://www.youtube.com/@justinbieber" target="_blank">YouTube Channel</a>!</p>
+    </aside>
+<footer align="center">
+    <nav>
+        <a href="#title">Back to Top</a>
+    </nav>
+    <h3 id="contact">Unit1Lesson2 Excercise</h3>
+    <p class="pSection1">Web Page created by Jason Batingan</p>
+</footer>
+</body>
+</html>
+
+<!--
+Build a basic page that includes
+information about your favorite musician,
+their skills, and pictures and videos
+For next
+class
+-->
+
+<!--
+Layout Tags:
+Header, Footer, Nav
+-->

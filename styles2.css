@@ -1,0 +1,111 @@
+body {
+    background-color: lightyellow;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    color: black;
+    margin-left: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sectionHeader {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav {
+    text-align: center;
+    font-size: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: separate;
+    text-align: center;
+    width: 500px;
+    table-layout: fixed;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    /* space between table and aside */
+    align-items: flex-start;
+    /* keeps tops aligned */
+}
+.aboutMeContainer {
+    display: flex;
+    gap: 20px;
+    /* space between table and aside */
+    align-items: flex-start;
+    /* keeps tops aligned */
+}
+.container table, .container aside {
+    flex: 1 1 50%;
+    /* default: each takes up 50% */
+    box-sizing: border-box;
+}
+.aboutMeContainer table, .aboutMeContainer aside {
+    flex: 1 1 50%;
+    /* default: each takes up 50% */
+    box-sizing: border-box;
+}
+
+/* Mobile responsive breakpoint */
+@media (max-width: 768px) {
+
+    .container table,
+    .container aside {
+        flex: 1 1 100%;
+        /* stack vertically on small screens */
+    }
+}
+
+.projectsTable th {
+    color: white;
+    background-color: lightgrey;
+    font-size: x-large;
+}
+.projectsTable, td {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    color: darkgreen;
+}
+
+footer{
+    background-color: lightgrey;
+    color: white;
+    text-align: center;
+}
+#contact {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.emailContact {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.aboutMeContainer {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
