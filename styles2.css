@@ -44,31 +44,26 @@ table {
 }
 .container {
     display: flex;
-    gap: 20px;
-    /* space between table and aside */
-    align-items: flex-start;
-    /* keeps tops aligned */
+    gap: 20px; /* space between table and aside */
+    align-items: flex-start; /* keeps tops aligned */
 }
 .aboutMeContainer {
     display: flex;
-    gap: 20px;
-    /* space between table and aside */
-    align-items: flex-start;
-    /* keeps tops aligned */
+    gap: 20px; /* space between table and aside */
+    align-items: flex-start; /* keeps tops aligned */
 }
 .container table, .container aside {
-    flex: 1 1 50%;
-    /* default: each takes up 50% */
-    box-sizing: border-box;
+    flex: 1 1 50%; /* default: each takes up 50% */
+    box-sizing: border-box; /* border-box will increase/decrease in size to wrap to page */
 }
 .aboutMeContainer table, .aboutMeContainer aside {
-    flex: 1 1 50%;
-    /* default: each takes up 50% */
+    flex: 1 1 50%; /* default: each takes up 50% */
     box-sizing: border-box;
 }
 
 /* Mobile responsive breakpoint */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* @media is a condition. in this case it will check if the screen viewing the webpage is <= to 768 px
+                            if so, then it will will stack the table and aside vertically instead of horizontally.*/
 
     .container table,
     .container aside {

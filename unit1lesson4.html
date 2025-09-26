@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit 1 Lesson 4</title>
+    <link rel="stylesheet" href="styleReset.css">
     <link rel="stylesheet" href="styles1.css">
     <style>
         section p {
@@ -24,7 +25,22 @@
     </section>
 
     <div class="boxModel">
-        <p>This is a p inside of a div element to demonstrate the box model.</p>
+        <p class="boxModelPara">This is a p inside of a div element to demonstrate the box model<br>
+            using the following CSS code:<br>
+            .boxModel {<br>
+            border: 5px solid black;<br>
+            border-style: dashed;<br>
+            background-color: lightpink;<br>
+            width: 2000px;<br>
+            justify-items: right;<br>
+            margin-top: 500px;<br>
+            margin-left: 100px; /* Margin pushes the box from the outside*/<br>
+            box-sizing: content-box;<br>
+            /*box-sizing: border-box;<br>
+            padding-top: 200px; /* padding pushes the contents from inside the box*/<br>
+            padding-bottom: 50px;<br>
+            }<br>
+        </p>
     </div>    
 
 </body>

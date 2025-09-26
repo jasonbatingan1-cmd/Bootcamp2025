@@ -5,6 +5,7 @@ body{
 }
 h2 {
     color: orange;
+    font-size: 20px;
     font-family: 'Arial', sans-serif;
     text-align: center;
     text-decoration: underline;
@@ -44,11 +45,19 @@ p {
     border: 5px solid black;
     border-style: dashed;
     background-color: lightpink;
-    width: 5000px;
+    width: 2000px;
     justify-items: right;
-    margin-top: 50px;
+    margin-top: 500px;
+    margin-bottom: 100px;
     margin-left: 100px; /* Margin pushes the box from the outside*/
-    box-sizing: content-box; /*a content box is a fixed size*/
-    /*box-sizing: border-box; /*a border box is dynamic and will wrap to the page size*/
+    box-sizing: content-box; /*a content box will add the margins to the outside of the border/
+    /*box-sizing: border-box; /*a border box will subtract from the border to fit margin inside space defined*/
     padding-top: 200px; /* padding pushes the contents from inside the box*/
+    padding-bottom: 50px;
+}
+.boxModelPara {
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: left;
 }

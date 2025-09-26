@@ -1,36 +1,90 @@
+@font-face {
+    font-family: "myFont";
+    src: url("https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+html {
+    font-family: myFont, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: bisque;
 }
 
 h1 {
     color: black;
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
+.subtitle {
+    font-size: rem 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav1 {
+    text-align: center;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 table{
     border: 1px solid black;
-    border-collapse: separate;
     text-align: center;
-    width: 500px;
+    box-sizing: border-box;
+    width: 100%;
     table-layout: fixed;
     box-align: center;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
+th {
+    background-color: lightgrey;
+    font-size: x-large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid black;
+}
 tr {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    
 }
 
+td {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.container1 {
+    display: flex;
+    flex: 1, 1, 50%;
+    gap: 20px;
+    align-items: flex-start;
+        /* keeps tops aligned */
+    box-sizing: border-box;
+}
+
+.container1 td {
+    justify-items: center;
+    align-items: center;
+}
 img {
     width: 100px;
     height: 100px;
+    border-radius: 50%; /* makes corners rounder */
 }
 footer {
     background-color: black;
@@ -48,7 +102,6 @@ footer {
     font-size: 10px;
 }
 .olSection1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     list-style-type: none;
 }
