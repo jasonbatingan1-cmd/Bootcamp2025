@@ -24,6 +24,24 @@
 
 <body>
     <div class="box">This is sample text</div>
+
+    <!-- An example of inline JavaScript: -->
+    <button id="button2" onclick="alert('Hello!')">Click Me</button> <!-- use button, button1, and button2 to see which script is being ran -->
+
+    <!-- An example of internal JavaScript: -->
+    <script>
+        document.getElementById("button").onclick = function () {
+            alert('Hello from internal script!');
+        };
+    </script>
+
+    <script src="demo.js">
+        // External JavaScript file
+        // Best practice to keep script tags at the bottom of the body
+        // so that the HTML content loads first before the scripts run
+        // This prevents errors when trying to access DOM elements that
+        // may not have loaded yet.
+    </script>
 </body>
 
 </html>
