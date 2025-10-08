@@ -7,7 +7,7 @@ html {
     font-family: myFont, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: auto;
 }
 
 body {
@@ -16,11 +16,12 @@ body {
 
 h1 {
     color: black;
+    background-color: lightgrey;
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
-    margin-top: 20px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .subtitle {
@@ -81,9 +82,21 @@ td {
     justify-items: center;
     align-items: center;
 }
+
+.container2 {
+    border: 2px dashed grey;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        size: 20px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+}
 img {
     width: 100px;
-    height: 100px;
+    height: auto;
     border-radius: 50%; /* makes corners rounder */
 }
 footer {
