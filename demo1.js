@@ -79,3 +79,32 @@ class Car {
 
 const myCar = new Car("Honda Civic", 2025);
 console.log("My car is " + myCar.age() + " years old.");
+
+
+// Functions
+console.log('=====Slope Intercept Form=====')
+function slope(m, x, b) {
+    return m * x + b;
+}
+
+let line = slope(Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10));
+console.log('Y = ' + line);
+
+//Operators
+//Four main Operators Assignment, Comparison, Arithmetic, and Bitwise
+//Assignment: x = f();
+//Addition Assignment: x += f(); sum = x + f(); 
+//AND (&&) and OR (||) Operators
+//'=' is an assignment, '==' compares if operands are equal, '===' is a strict equal
+//PEMDAS kinda applies in programming too. () will be ran first
+//'new'
+
+class Calculator {
+    constructor(param1 = 0, param2 = 0) {
+        this.param1 = param1;
+        this.param2 = param2;
+    }
+}
+
+let newCal = new Calculator(2, 4);
+console.log(newCal);
