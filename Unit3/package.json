@@ -1,0 +1,19 @@
+{
+  "name": "unit3",
+  "version": "1.0.0",
+  "description": "This is a demo project",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node demo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "jasonbatingan1-cmd"
+  },
+  "author": "Jason Batingan",
+  "license": "ISC",
+  "dependencies": {
+    "capitalize": "^2.0.4"
+  }
+}

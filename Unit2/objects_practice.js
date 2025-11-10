@@ -133,15 +133,28 @@ let book4 = new audioBook(
 
 let library = [book1, book2, book3, book4];
 
-let longestBook =
+const longestBook = 
     library
-        .reduce((total, pages) => total + pages, 0);
+        .reduce((longest, current) => {
+    // compare something here
+            if (current.pages > longest.pages) { //make sure to use .pages (to look at a property) when comparing
+                // current one wins
+                return current;
+            } else {
+                // keep the existing one
+                return longest;
+            }
+            // return whichever book should "win" this round
+        }, library[0]);/* initial value here. this will grab the first book in the library array */
+
 console.log(longestBook);
 
 let fictionBooks = 
     library
-        .filter((book) => book.fiction === true);
-    console.log(fictionBooks);
+        .filter((book) => {
+            bookDetails.fiction === true
+        });
+console.log(fictionBooks);
     // book1.getBookInfo(); //when calling functions, always end with "()"
     // book1.getReadingTime();
     // book2.getBookInfo();
@@ -153,4 +166,4 @@ let fictionBooks =
     // book4.getAudioBookInfo();
     // book4.getListeningTime();
     // library.forEach((book) => book.getBookInfo());
-    library.forEach((book) => book.getSummary());
+    // library.forEach((book) => book.getSummary());
