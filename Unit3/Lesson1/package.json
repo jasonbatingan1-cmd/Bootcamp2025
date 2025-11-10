@@ -9,11 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "jasonbatingan1-cmd"
+    "url": "https://github.com/jasonbatingan1-cmd/Bootcamp2025"
   },
   "author": "Jason Batingan",
   "license": "ISC",
   "dependencies": {
-    "capitalize": "^2.0.4"
+    "capitalize": "^2.0.4",
+    "emoji": "^0.3.2"
   }
 }
