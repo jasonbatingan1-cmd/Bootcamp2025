@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="portfolio">Jason Batingan's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/styleReset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles2.css">
+</head>
+
+<body>
+    <h1 class="title" id="title">Jason Batingan</h1>
+    <p class="subtitle">I'm a student currently enrolled in the Circuit Stream Software Development Bootcamp, working on
+        becoming a full-stack developer.
+        I re-found my passion for software development and looking for an opportunity to show that! <br>
+    </p>
+
+    <!-- NavBar for each page -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container-fluid">
+    
+            <!-- Toggler button (hamburger icon) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav mx-auto text-center">
+                    <a class="nav-link" href="assignment1.html">Home</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="resume.html">Resume</a>
+                    <a class="nav-link" href="social.html">Social</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Projects Section -->
+    <h2 class="sectionHeader" id="projects">Projects</h2>
+    <p class="sectionText">Here are some web pages I've developed thus far:</p>
+
+    <!--Create containers for each project with image and description-->
+    <div class="container">
+        <h3>Upvote/Downvote Images with TheCatAPI</h3>
+        <aside>
+            <img class="img-fluid" src="../../images/catAPI_cover.png" alt="catAPIthumbnail" width="300"
+                height="150">
+        </aside>
+        <p class="projectText">This is an interactive webpage where the user will select a cat breed, then hit a button to display an image of that selected breed.
+            The user will then be able to hit an upvote/downvote button if they like or disliked the image shown.
+            This project makes use of FetchAPI, GET/POST, asynchronous functions, and DOM to get values and create new HTML elements.<br>
+            <a href="../projects/catAPI_practice/catAPI.html"
+                target="_blank">Click here to
+                view the live page!</a>
+    
+    </div>
+    
+    <div class="container">
+        <h3>Number Guessing Game</h3>
+        <aside>
+            <img class="img-fluid" src="../../images/guessGameCover.png" alt="catAPIthumbnail" width="300"
+                height="150">
+        </aside>
+        <p class="projectText">This is an interactive webpage where the user will try to guess the mystery number. The user enters their guess in the the number input line.
+            The user will then recieve a message if the guess is too high, too low, or the correct number.
+            This project makes use of DOM to get the input from the user, and display feedback to the user.<br>
+            <a href="../projects/guessGame/guessGame.html"
+                target="_blank">Click here to
+                view the live page!</a>
+    
+    </div>
+    
+    <div class="container">
+        <h3>Favorite Musicians page</h3>
+        <aside>
+            <img class="img-fluid" src="../../images/001.png"
+                alt="Favorite Musicians Page Screenshot" width="300" height="150">
+        </aside>
+        <p class="projectText">This is a webpage I created to showcase the use of various HTML and CSS elements.
+            It includes headings, paragraphs, images, lists, links, and tables to present information about my favorite
+            musicians.
+            The page is styled with CSS to enhance its visual appeal and layout. <br>
+            <a href="../projects/Unit1Lesson2.html" target="_blank">Click here to
+                view the live page!</a>
+
+    </div>
+
+    <div class="container">
+        <h3>Cafe Menu page</h3>
+        <aside>
+            <img class="img-fluid" src="../../images/002.png"
+                alt="Favorite Musicians Page Screenshot" width="300" height="150">
+        </aside>
+        <p class="projectText">This is a webpage I created to showcase the use of various HTML and CSS elements.
+            It includes headings, paragraphs, images, lists, links, and tables to present a menu of food and drink.
+            The page is styled with CSS to enhance its visual appeal and layout. <br>
+            <a href="../projects/menu.html" target="_blank">Click here to view
+                the live page!</a>
+
+    </div>
+
+    <!-- Script for Bootstrap functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <!-- js script to highlight the active page in NavBar -->
+    <script src="activePage.js"></script>
+        
+</body>
+
+<footer>
+    <!-- Footer -->
+    <p class="footerText" align="center">© 2024 Jason Batingan. All rights reserved.</p>
+    <a href="#title" align="center" style="text-decoration: underline;">Back to Top</a>
+</footer>
+
+</html>

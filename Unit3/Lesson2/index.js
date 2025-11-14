@@ -2,6 +2,9 @@ const http = require('http');
 const fs = require('fs');
 const qs = require('querystring');
 
+const DB = [];
+DB.push();
+console.log(DB);
 //Create a server object
 const server = http.createServer((req, res) => {
     const querystring = req.url.split('?')[1]; //splits the url into an array at the '?', at the 1 index of the URL (localhost:8080 = index 0, month=x is index 1)
@@ -26,4 +29,5 @@ const PORT = 8080;
 const HOSTNAME = 'localhost'
 server.listen(PORT, HOSTNAME, () => {
     console.log(`Server running at http://${HOSTNAME}:${PORT}/`);
+    console.log("calling this API");
 });   

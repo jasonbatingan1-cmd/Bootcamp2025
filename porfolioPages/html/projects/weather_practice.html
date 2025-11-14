@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+        }
+
+        .weather-report {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .forecast {
+            margin-top: 10px;
+        }
+
+        .day {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Weather Forecast</h1>
+    <div id="weatherContainer" class="weather-report"></div>
+
+    <script>
+        // Weather JSON data as a string
+        const weatherJSON = `{
+            "location": "New York",
+            "forecast": [
+                {
+                    "date": "2024-10-25",
+                    "temperature": {
+                        "high": 70,
+                        "low": 50
+                    },
+                    "condition": "Sunny"
+                },
+                {
+                    "date": "2024-10-26",
+                    "temperature": {
+                        "high": 68,
+                        "low": 48
+                    },
+                    "condition": "Cloudy"
+                }
+            ]
+        }`;
+
+        //create DOM element to display weather Data
+            const para = document.createElement("p");
+            para.innerText = '';
+        //append the created element to the container
+            document.getElementById("weatherContainer").appendChild(para);
+
+        // Parse the JSON data
+            const weatherData = JSON.parse(weatherJSON);
+
+        // Function to display the weather data
+        //Write logic here to display weather in created DOM 
+            para.innerHTML +=`2-day forecast for:  ${weatherData.location}<br><br>`;
+            for (i = 0; i < weatherData.forecast.length; i++) { //don't use <= when running loop to array length.
+                para.innerHTML += `
+                    <strong>${weatherData.forecast[i].date}</strong><br>
+                    High: ${weatherData.forecast[i].temperature.high}°F<br>
+                    Low: ${weatherData.forecast[i].temperature.low}°F<br>
+                    Condition: ${weatherData.forecast[i].condition}<br><br>
+                    `;
+
+            }
+            /* use '.' to get object properties INSIDE array */
+            //use innerHTML to be able to parse HTML content
+        
+        // Call the function to display weather data
+        displayWeather(weatherData);
+    </script>
+
+</body>
+
+</html>

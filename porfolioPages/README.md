@@ -18,4 +18,5 @@ Updates 11/23/25:
 - Fixed stylesheet attaching. (Ex: it's ../styles2.css but it should be ./styles2.css)
 - Updated README to mardown (.md) file.
 - Added interactive projects under 'Projects' section of webpage.
+- Added responsiveness to NavBar to turn into a hamburger menu icon when screen size is reduced. Also, active page being viewed will be highlighted in the NavBar.
 =======================================================================================

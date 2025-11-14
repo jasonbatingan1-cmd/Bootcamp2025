@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cat API Practice</title>
+    <style>
+        body {
+            background-color:cornsilk;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        .container {
+            background-color: white;
+            height: auto;
+            width: 600px;
+            padding: 10px;
+            border: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.299);
+        }
+
+        #catContainer {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Random Cat Picture</h2>
+
+    <div class="container">
+        <button id="catBtn">Get New Cat</button>
+        <button id="stopBtn">Stop</button>
+        <select id="breed">
+            <option value="">-- Select a breed --</option>
+        </select>
+
+        <a href="https://api.thecatapi.com/v1/breeds" target="_blank">View Breed IDs</a>
+        <button id="upvote">👍 Upvote</button>
+        <button id="downvote">👎 Downvote</button>
+        <div id="catContainer"></div>
+    </div>
+
+    <!-- Script to link JavaScript -->
+    <script src="catAPI.js"></script>
+
+</body>
+

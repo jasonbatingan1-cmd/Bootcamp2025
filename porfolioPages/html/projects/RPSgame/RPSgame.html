@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="portfolio">Rock-Paper-Scissors Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleReset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1>Rock-Paper-Scissors Game</h1>
+
+        <div class="container"><!-- container for input -->
+            <h3>Enter your choice:</h3>
+
+            <!-- Radio Buttons for user input -->
+            <input type="radio" id="rock">
+            <label for="html">Rock 🪨</label><br>
+            <input type="radio" id="paper">
+            <label for="css">Paper 📄</label><br>
+            <input type="radio" id="scissors">
+            <label for="javascript">Scissors ✂️</label><br>
+
+            <!-- Button to start game -->
+            <button type="button" id="submit" onclick="startGame()">Submit</button>
+        </div>
+
+        <div class="container"><!-- container for result -->
+            <h3 id="cpuChoice">Computer Choice: </h3>
+            <h3 id="result">Result: </h3>
+        </div>
+
+        <!-- Script to link JavaScript -->
+        <script src="RPSgame.js"></script>
+
+        <!-- Script for Bootstrap functionality -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+            </script>
+        
+    </body>
+</html>
