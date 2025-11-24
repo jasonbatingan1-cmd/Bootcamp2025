@@ -56,3 +56,12 @@ function updateResult(message) {
     const textBox = document.getElementById("result");
     textBox.textContent = 'Result: ' + message;//use '.textContext' or '.innerText' to update the text in an <h3> element
 }
+
+//function to reset the game
+function restartGame() {
+    let radios = document.querySelectorAll('input[name="rps"]');
+    radios.forEach(radio => radio.checked = false);
+
+    updateCPUChoice('');
+    updateResult('');
+}
