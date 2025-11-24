@@ -22,21 +22,18 @@ function startGame() {
     let actualNumber = Number(userGuess.value); //grabs the string from "userGuess". need .value in order to read the value from the input
                                                 //use Number() to convert the string into a number
 
-    if (isNaN(actualNumber) || userGuess === '') { //use === when doing a comparison. isNaN will check for a number upfront, since '' in the input box is equal to 0;
-        displayResult('Enter Valid number 1 - 10!')
+    // Check for invalid input (empty, not a number, out of range)
+    if (isNaN(actualNumber) || actualNumber < 1 || actualNumber > 10) {
+        displayResult('Enter a valid number between 1 and 10!');
+        return; // stop the function so guessCount doesn't increase
     }
-    
     guessCount++;
-
     if (actualNumber > number) {
-        displayResult('Too high! Try again.');
-        guessCount += 1;
+        displayResult('Too high! Try again. Current Guess Count: ' + guessCount);
     } else if (actualNumber < number) {
-        displayResult('Too low! Try again.');
-        guessCount += 1;
+        displayResult('Too low! Try again. Current Guess Count: ' + guessCount);
     } else {
-        displayResult('You Win! Number of guesses: ' + guessCount);
-        guessCount += 1;
+        displayResult('You Win! Number of guesses: ' + guessCount); 
     }
 }
 
@@ -49,5 +46,4 @@ function resetGame() {
 
 function displayResult(message) {
     messageBox.innerText = message;
-    guessCount = 0;
 }

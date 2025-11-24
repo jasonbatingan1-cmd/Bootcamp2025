@@ -1,13 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random user display</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <div class="container">
+    <h1>Random Book Information</h1>
+    <button id="fetchButton">Get a random book</button>
+    <div id="bookInfo" class="book-info">
+      <p>Id: <span id="bookId"></span></p>
+      <p>Title: <span id="bookTitle"></span></p>
+      <p>Author: <span id="bookAuthor"></span></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Add a book:</h1>
+    <input type="text" id="newBookTitle" placeholder="Enter Title"><br>
+    <input type="text" id="newBookAuthor" placeholder="Enter Author"><br>
+    <button id="createButton">Get a random book</button>
+  </div>
+
+  <script src="javascripts/script.js"></script>
 </body>
 
 </html>
