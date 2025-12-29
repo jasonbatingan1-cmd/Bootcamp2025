@@ -143,4 +143,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // Set editingItemId for edit operation
         editingItemId = id;
     }
+
+    const logoutBtn = document.getElementById('logout-btn');
+    logoutBtn.addEventListener('click', function () {
+        fetch('/auth/logout', {
+            method: 'POST'
+        })
+            .then(() => {
+                window.location.href = '../auth/login'; // Redirect to login page after logout
+            })
+            .catch(err => console.error('Error during logout: ', err));
+    });
 });
