@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= title %>
-    </title>
-</head>
+<%- include('partials/header', { title: 'My Page' }) %>
 
 <body>
     <h1>Welcome to <%= title %>
     </h1>
+    <h2>recipes.ejs</h2>
     <h2>Available Recipes:</h2>
+    <!--
+    Regualr Unordered List 
     <ul>
         <% recipes.forEach(recipe=> { %>
             <li><strong>
@@ -20,6 +17,14 @@
                 </strong>: <%= recipe.ingredients %>
             </li>
             <% }); %>
+    </ul> -->
+
+    <!-- Using Bootstrap List Group -->
+    <ul class="list-group">
+        <% recipes.forEach(recipe => { %>
+            <li class="list-group-item"><strong><%= recipe.title %></strong>: <%= recipe.ingredients %></li>
+        <% }); %>
+        
     </ul>
 </body>
 

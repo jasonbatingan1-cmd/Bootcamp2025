@@ -24,7 +24,7 @@ const recipes = [
 ];
 
 app.use('/', (req, res) => {
-    res.render('index', { title: 'Unit 4 Lesson 2', recipes });
+    res.render('recipes', { title: 'Unit 4 Lesson 2', recipes });
 });
 
 module.exports = router;
